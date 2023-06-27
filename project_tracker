@@ -1,3 +1,5 @@
 1. 18/06/2023 11:00 - Started on 13/06/2022
 2. 18/06/2023 11:00 - Currently the ssl/tls connection has to be resolved properly, need to look into ssl module
 3. 25/06/2023 15:19 - The ssl/tls issue is something related to browser config for certificate verification experienced in Safari and Chrome. Switching to Firefox worked
+4. 27/06/2023 23:38 - Discovered this service called ngrok with which I can freeely make the server available over the internet
+5. 27/06/2023 23:39 - Beacuse of the above, removed the ssl authentication in code, and also the key and certificate files
