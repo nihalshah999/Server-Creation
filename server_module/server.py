@@ -10,7 +10,7 @@ class Server:
         self.port = port
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket = ssl.wrap_socket(self.socket, server_side = True, certfile = path_to_cert, keyfile = path_to_key)
-        self.socket = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2).wrap_socket(self.socket)
+        #self.socket = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2).wrap_socket(self.socket)
         self.handler = RequestHandler()
 
     def start(self):

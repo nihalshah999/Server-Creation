@@ -3,11 +3,11 @@
 from server_module.server import Server
 
 if __name__ == "__main__":
-	host = "192.168.0.101"
+	host = "localhost"
 	port = 12345
 
-	path_to_cert = '/home/nihal/Python/Server Creation/cert.pem'
-	path_to_key = '/home/nihal/Python/Server Creation/key.pem'
+	path_to_cert = './cert.pem'
+	path_to_key = './key.pem'
 
 	server = Server(host, port, path_to_cert, path_to_key)
 	server.start()
